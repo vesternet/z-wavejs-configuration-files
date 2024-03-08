@@ -11,13 +11,13 @@
 	],
 	"firmwareVersion": {
 		"min": "1.2.5",
-		"max": "1.2.7"
+		"max": "1.3.6"
 	},
 	"paramInformation": [
 		{
 			"#": "2",
-			"label": "Send Binary Report on State Change",
 			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Send Binary Report on State Change",
 			"defaultValue": 1
 		},
 		{
@@ -38,7 +38,6 @@
 			"valueSize": 1,
 			"defaultValue": 0,
 			"allowManualEntry": false,
-			"unsigned": true,
 			"options": [
 				{
 					"label": "All the same, toggle the respective output",
@@ -65,16 +64,15 @@
 		{
 			"#": "8",
 			"$import": "~/templates/master_template.json#base_enable_disable",
-			"label": "Enable Inclusion / Exclusion Using External Switch On Input S1",
+			"label": "Inclusion / Exclusion Using External Switch On Input S1",
 			"defaultValue": 1
 		},
 		{
 			"#": "9",
-			"label": "Enable / Disable Sending Of Central Scene Commands In Response To Inputs",
+			"label": "Send Central Scene Commands in Response to Inputs",
 			"valueSize": 1,
 			"defaultValue": 1,
 			"allowManualEntry": false,
-			"unsigned": true,
 			"options": [
 				{
 					"label": "Disabled for both inputs",
@@ -97,11 +95,10 @@
 		{
 			"#": "10",
 			"label": "Power Change Report Threshold",
-			"unit": "W",
 			"valueSize": 1,
+			"unit": "W",
 			"minValue": 0,
 			"maxValue": 100,
-			"unsigned": true,
 			"defaultValue": 10,
 			"options": [
 				{
@@ -113,11 +110,10 @@
 		{
 			"#": "11",
 			"label": "Current Change Report Threshold",
-			"unit": "0.1A",
 			"valueSize": 1,
+			"unit": "0.1 A",
 			"minValue": 0,
 			"maxValue": 10,
-			"unsigned": true,
 			"defaultValue": 1,
 			"options": [
 				{
@@ -129,11 +125,10 @@
 		{
 			"#": "12",
 			"label": "Voltage Change Report Threshold",
-			"unit": "V",
 			"valueSize": 1,
+			"unit": "V",
 			"minValue": 0,
 			"maxValue": 10,
-			"unsigned": true,
 			"defaultValue": 2,
 			"options": [
 				{
@@ -145,11 +140,10 @@
 		{
 			"#": "14",
 			"label": "Energy/Power/Voltage/Current Report Interval",
-			"unit": "seconds",
 			"valueSize": 4,
+			"unit": "seconds",
 			"minValue": 0,
 			"maxValue": 2678400,
-			"unsigned": true,
 			"defaultValue": 3600,
 			"options": [
 				{

@@ -12,7 +12,7 @@
 	],
 	"firmwareVersion": {
 		"min": "1.4",
-		"max": "1.7"
+		"max": "1.8"
 	},
 	"paramInformation": [
 		{
@@ -37,7 +37,6 @@
 			"valueSize": 1,
 			"defaultValue": 0,
 			"allowManualEntry": false,
-			"unsigned": true,
 			"options": [
 				{
 					"label": "Momentary",
