@@ -153,6 +153,35 @@
 			]
 		}
 	],
+	"compat": {
+		// The device probably has a bugged binary switch and basic CC implementation
+		"commandClasses": {
+			"add": {
+				"0x25": {
+					"endpoints": {
+						"1": {
+							"isSupported": true,
+							"isControlled": true,
+							"version": 2
+						},
+						"2": {
+							"isSupported": true,
+							"isControlled": true,
+							"version": 2
+						}
+					}
+				}
+			},
+			"remove": {				
+				"0x25": {
+					"endpoints": [0]
+				},
+				"0x20": {
+					"endpoints": "*"
+				}
+			}
+		}
+	},
 	"metadata": {
 		"inclusion": "Step 1. Set primary controller/gateway into inclusion mode.\nStep 2. Either power cycle the product, or triple press the action button.\n Step 3. The connected light will stay on solid for 3 seconds to indicate successful inclusion.",
 		"exclusion": "Step 1. Set primary controller/gateway into exclusion mode.\nStep 2. Triple press the action button.",
