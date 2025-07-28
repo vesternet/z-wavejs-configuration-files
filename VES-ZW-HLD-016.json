@@ -49,6 +49,12 @@
 			]
 		},
 		{
+			"#": "7",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Use External Switch for Inclusion/Exclusion",
+			"defaultValue": 1
+		},
+		{
 			"#": "10",
 			"label": "Power Change Report Threshold",
 			"valueSize": 1,
