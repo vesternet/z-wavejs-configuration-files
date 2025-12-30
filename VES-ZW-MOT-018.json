@@ -246,9 +246,9 @@
 				"0x20": {
 					"endpoints": "*"
 				},
-				// Remove multi level from ep0
+				// Remove multi level from ep0 & ep2
 				"0x26": {
-					"endpoints": [0]
+					"endpoints": [0,2]
 				}
 			}
 		}
