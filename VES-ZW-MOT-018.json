@@ -225,10 +225,30 @@
 	],
 	"compat": {
 		"commandClasses": {
+			"add": {
+				// Add multi level on ep1
+				"0x26": {
+					"endpoints": {
+						"1": {
+							"isSupported": true,
+							"isControlled": true,
+							"version": 2
+						}
+					}
+				}
+			},
 			"remove": {
 				// The device probably has a bugged Window Covering CC implementation
 				"0x6a": {
 					"endpoints": "*"
+				},
+				// Remove basic
+				"0x20": {
+					"endpoints": "*"
+				},
+				// Remove multi level from ep0
+				"0x26": {
+					"endpoints": [0]
 				}
 			}
 		}
